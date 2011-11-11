@@ -1,3 +1,5 @@
 (ns viz.nimbus.team-one)
-(defn count-stream [msg] (str msg "." 56))
+(defn count-stream [msg]
+  (if-let [n (get msg "foo")]
+    (update-value "foo" (+ (get-value "foo" n)))))
 
