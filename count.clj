@@ -1,3 +1,3 @@
 (ns viz.nimbus.team-one)
-(defn count-stream [] 56)
+(defn count-stream [msg] (str msg "." 56))
 
